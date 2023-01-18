@@ -22,7 +22,7 @@ function play($f, [switch]$loop=$false) {
 . $PSScriptRoot\ls-recent.ps1      # ls-rec
 . $PSScriptRoot\strip-bom.ps1      # sb
 . $PSScriptRoot\recycle.ps1   	   # recycle
-. $PSScriptRoot\pomodoro.ps1
+. $PSScriptRoot\pomodoro\pomodoro.ps1
 
 $downloads = "$home\Downloads"
 

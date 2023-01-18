@@ -1,0 +1,6 @@
+[submodule "rand-asciicat"]
+	path = rand-asciicat
+	url = https://github.com/dulldesk/rand-asciicat.git
+[submodule "pomodoro"]
+	path = pomodoro
+	url = https://gist.github.com/dulldesk/95060d14da1238d6eed9676b8d215d24
