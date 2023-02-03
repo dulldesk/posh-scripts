@@ -31,4 +31,4 @@ Removes the [byte order mark](https://en.wikipedia.org/wiki/Byte_order_mark) fro
 
 ### [play](./play.ps1)
 
-Play .wav audio files from the terminal. Usage: `play [file]`, options: `-loop`
+Play .wav audio files from the terminal. Usage: `play [file]`, params: `-loop`, `-stop`
