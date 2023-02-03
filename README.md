@@ -14,7 +14,6 @@ Pomodoro timer
 Profile script that runs on launch. Includes aliases, config, and:
 * `refreshenv`: refresh environment path variables
 * `lsm`: compact version of `ls`
-* `play`: plays wav audio
 * `global:prompt`: changes the shell [prompt](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_prompts)
 
 
@@ -30,3 +29,6 @@ Recycle files and folders.
 
 Removes the [byte order mark](https://en.wikipedia.org/wiki/Byte_order_mark) from the beginning of a file.
 
+### [play](./play.ps1)
+
+Play .wav audio files from the terminal. Usage: `play [file]`, options: `-loop`
