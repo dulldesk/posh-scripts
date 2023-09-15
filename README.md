@@ -19,7 +19,7 @@ Profile script that runs on launch. Includes aliases, config, and:
 
 ### [ls-recent](./ls-recent.ps1)
 
-`ls` but for the `n` most recently modified files; `n=5` by default
+`ls` for the `n` most recently modified files. Usage: `ls-recent [n=5] [other ls args]`, or `ls-rec`
 
 ### [recycle](./recycle.ps1)
 
@@ -31,7 +31,7 @@ Removes the [byte order mark](https://en.wikipedia.org/wiki/Byte_order_mark) fro
 
 ### [play](./play.ps1)
 
-Play .wav audio files from the terminal. Usage: `play [file]`, params: `-loop`, `-stop`
+Play .wav audio files from the terminal. Usage: `play <file>`, params: `-loop`, `-stop`
 
 ### [tiny-url](./tiny-url.ps1)
 

@@ -15,4 +15,4 @@ function ls-recent {
   return ls @a | sort lastwritetime -desc | select -first $n
 }
 
-set-alias -name ls-rec -val ls-recent
+set-alias ls-rec ls-recent
