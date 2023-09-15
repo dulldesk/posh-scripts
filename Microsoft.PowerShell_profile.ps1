@@ -18,6 +18,7 @@ function lsm {
 . $PSScriptRoot\recycle.ps1   	   # recycle
 . $PSScriptRoot\pomodoro\pomodoro.ps1
 . $PSScriptRoot\play.ps1
+. $PSScriptRoot\tiny-url.ps1
 
 $downloads = "$home\Downloads"
 

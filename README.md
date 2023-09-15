@@ -32,3 +32,7 @@ Removes the [byte order mark](https://en.wikipedia.org/wiki/Byte_order_mark) fro
 ### [play](./play.ps1)
 
 Play .wav audio files from the terminal. Usage: `play [file]`, params: `-loop`, `-stop`
+
+### [tiny-url](./tiny-url.ps1)
+
+Shorten urls with [tinyurl.com](https://tinyurl.com/). Usage: `tiny <url>`
