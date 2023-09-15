@@ -15,6 +15,7 @@ Profile script that runs on launch. Includes aliases, config, and:
 * `refreshenv`: refresh environment path variables
 * `lsm`: compact version of `ls`
 * `global:prompt`: changes the shell [prompt](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_prompts)
+* [`Import-Module posh-git`](https://dulldesk.github.io/notes/git-autocomplete/)
 
 
 ### [ls-recent](./ls-recent.ps1)
