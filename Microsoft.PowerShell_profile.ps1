@@ -19,6 +19,7 @@ function lsm {
 . $PSScriptRoot\pomodoro\pomodoro.ps1
 . $PSScriptRoot\play.ps1
 . $PSScriptRoot\tiny-url.ps1
+. $PSScriptRoot\wget-drive.ps1
 
 $downloads = "$home\Downloads"
 
