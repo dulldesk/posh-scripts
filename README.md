@@ -37,3 +37,7 @@ Play .wav audio files from the terminal. Usage: `play <file>`, params: `-loop`, 
 ### [tiny-url](./tiny-url.ps1)
 
 Shorten urls with [tinyurl.com](https://tinyurl.com/). Usage: `tiny <url>`
+
+### [wget-drive](./wget-drive.ps1)
+
+Download Google Drive files (requires public access). Usage: `wget-drive <url> <output_file>`
