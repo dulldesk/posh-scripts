@@ -12,7 +12,7 @@ function ls-recent {
     $a = @($n) + $args
     $n = 5
   }
-  return ls @a | sort lastwritetime -desc | select -first $n
+  return get-childitem @a | sort-object lastwritetime -desc | select-object -first $n
 }
 
 set-alias ls-rec ls-recent
