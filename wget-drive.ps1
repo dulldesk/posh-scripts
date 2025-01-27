@@ -11,5 +11,5 @@ function wget-drive {
 		write-host "could not parse as drive url: $url" -fore red
 		return
 	}
-	wget.exe "https://drive.google.com/uc?export=download&id=$id&confirm=yes" -O $outfile
+	iwr "https://drive.google.com/uc?export=download&id=$id&confirm=yes" -OutFile $outfile
 }
