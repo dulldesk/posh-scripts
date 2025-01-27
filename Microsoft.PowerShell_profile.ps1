@@ -19,6 +19,14 @@ set-alias l ls
 set-alias gti git
 set-alias got git
 
+function conf {
+  param([switch]$ret=$false)
+  $curr = $pwd
+  cd /etc/nixos
+  sudo vim .
+  if ($ret) { cd $curr }
+}
+
 function global:prompt {return "PS $((pwd | select-object -exp path).replace($home,"~").replace("\Documents\schol","📎"))> "}
 
 $isWin = [environment]::osversion.platform -eq 'Win32NT'
