@@ -9,7 +9,7 @@ function refreshenv {
 }
 
 function lsm {
-  ls @args | select name, lastwritetime, mode
+  get-childitem @args | select-object name, lastwritetime, mode
 }
 
 
