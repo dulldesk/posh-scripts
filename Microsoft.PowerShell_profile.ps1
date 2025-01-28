@@ -27,6 +27,8 @@ function conf {
   if ($ret) { cd $curr }
 }
 
+$env:EDITOR = 'nvim'
+
 function global:prompt {return "PS $((pwd | select-object -exp path).replace($home,"~").replace("\Documents\schol","📎"))> "}
 
 $isWin = [environment]::osversion.platform -eq 'Win32NT'
