@@ -20,11 +20,12 @@ set-alias gti git
 set-alias got git
 
 function conf {
-  param([switch]$ret=$false)
-  $curr = $pwd
-  cd /etc/nixos
-  sudo vim .
-  if ($ret) { cd $curr }
+  param([switch]$HomeManager=$false)
+  if (-not $HomeManager) {
+    sudo vim /etc/nixos
+  } else {
+    vim ~/.config/home-manager
+  }
 }
 
 $env:EDITOR = 'nvim'
