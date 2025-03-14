@@ -33,13 +33,15 @@ function conf {
 
 $env:EDITOR = 'nvim'
 
+$env:PATH = [Environment]::GetEnvironmentVariable("PATH") + ":/home/puffin/.cargo/bin"
+
 function global:prompt {return "PS $((pwd | select-object -exp path).replace($home,"~").replace("\Documents\schol","📎"))> "}
 
 $isWin = [environment]::osversion.platform -eq 'Win32NT'
 if ($isWin) {
 function refreshenv {
   param([switch]$Silent=$False)
-  $env:Path = [Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [Environment]::GetEnvironmentVariable("Path","User")
+  $env:PATH = [Environment]::GetEnvironmentVariable("PATH")
   if (-not $Silent) {write-host "Refreshed (path) environment variables"}
 }
 
