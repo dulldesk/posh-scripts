@@ -18,6 +18,9 @@ $downloads = "$home\Downloads"
 set-alias l ls
 set-alias gti git
 set-alias got git
+set-alias igt git
+
+set-alias start dolphin
 
 function conf {
   param([switch]$HomeManager=$false)
