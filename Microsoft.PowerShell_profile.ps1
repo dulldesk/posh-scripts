@@ -37,8 +37,7 @@ $env:PATH = [Environment]::GetEnvironmentVariable("PATH") + ":/home/puffin/.carg
 
 function global:prompt {return "PS $((pwd | select-object -exp path).replace($home,"~").replace("\Documents\schol","📎"))> "}
 
-$isWin = [environment]::osversion.platform -eq 'Win32NT'
-if ($isWin) {
+if ($isWindows) {
 function refreshenv {
   param([switch]$Silent=$False)
   $env:PATH = [Environment]::GetEnvironmentVariable("PATH")
