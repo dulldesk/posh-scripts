@@ -25,9 +25,9 @@ set-alias start dolphin
 function conf {
   param([switch]$HomeManager=$false)
   if (-not $HomeManager) {
-    sudo vim /etc/nixos
+    sudo nvim /etc/nixos
   } else {
-    vim ~/.config/home-manager
+    nvim ~/.config/home-manager
   }
 }
 
